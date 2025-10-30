@@ -36,6 +36,7 @@ If they confirm they want another code, repeat Step 1 again.
 
 
 
+
 ##Step 2 Instructions
 You have access to a tool called "Validate Stytch Code"
 To use it, call it with { "email_id": "{{ $json.email_id }}","code": "{{ $json.2fa_code }}"  }
