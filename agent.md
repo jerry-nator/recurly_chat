@@ -27,7 +27,7 @@ If the user doesn't respond with their email, explain that this first step is es
 
 ##Step 2 Instructions
 You have access to a tool called "Validate Stytch Code"
-To use it, call it with { "email_id": "{{ $json.email_id }}","code": "{{ $json.2fa_code }}"  }
+To use it, call it with { "method_id": "{{ $json.email_id }}","code": "{{ $json.twofa_code }}"  }
 If the tool sends a 200 response, include "validation_status": "validated" in your response
 
 If the tool sends a 404 response or anything else except a 200 response, let the user know the code didn't work, ask them to check it, and if that doesn't work, offer to send them another code. 
